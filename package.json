@@ -1,19 +1,29 @@
 {
-  "name": "example",
+  "name": "simple-theme",
   "version": "0.0.1",
-  "private": true,
+  "description": "Lightweight and highly-customizable theming package for your React Native apps",
+  "main": "/",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native run-ios",
-    "test": "jest",
-    "lint": "eslint ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "react": "16.9.0",
-    "react-native": "0.61.5"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewtelkamp/simple-theme.git"
   },
-  "jest": {
-    "preset": "react-native"
-  }
+  "keywords": [
+    "themes",
+    "theming",
+    "dark-mode",
+    "react",
+    "native",
+    "react-native",
+    "react-nativ-theming",
+    "react-nativ-dark-mode"
+  ],
+  "author": "Andrew Telkamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewtelkamp/simple-theme/issues"
+  },
+  "homepage": "https://github.com/andrewtelkamp/simple-theme#readme"
 }

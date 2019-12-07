@@ -1,6 +1,5 @@
 
-import { AppRegistry } from 'react-native'
-import App from './src/App'
-import { name as appName } from './app.json'
+import { SimpleTheme } from './SimpleTheme'
 
-AppRegistry.registerComponent(appName, () => App);
+export default SimpleTheme
+export * from './lib /config'
