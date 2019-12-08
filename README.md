@@ -25,7 +25,7 @@ yarn add simple-theme
 
 # Structuring Your Themes
 
-Simple-Theme accepts your theming structure as is, and returns only the active theme object for your use within styles. This provides flexibility for each unique use-case. Be forewarned, simple-theme expects all provided objects to have identical shapes. At this time, SimpleTheme provides no means of protecting against an undefined style properties. In an effort to provide such flexibility, if and how this protection is implemented is entirely up to the developer. While it's encouraged you use a structure fitting for your needs, provided [here](docs/exampleThemes) is an example of one possible approach.
+Simple-Theme accepts your theming structure as is, and returns only the active theme object for your use within styles. **Each theme object must have a `name` *string* and `styles` *object* property** [see example](docs/exampleThemes.md). This provides flexibility for each unique use-case. Be forewarned, simple-theme expects all provided objects to have identical shapes. At this time, SimpleTheme provides no means of protecting against an undefined style properties. In an effort to provide such flexibility, if and how this protection is implemented is entirely up to the developer. While it's encouraged you use a structure fitting for your needs, provided [here](docs/exampleThemes.md) is an example of one possible approach.
 
 
 # Setup & Usage
