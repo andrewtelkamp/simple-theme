@@ -1,4 +1,4 @@
-#<SimpleTheme />
+# `<SimpleTheme />`
 
 ## Props
 

@@ -18,8 +18,8 @@ yarn add simple-theme
 
 # Docs
 
-[`<SimpleTheme />` Component API](docs/SimpleTheme.md)<br/>
-[`theme` API](docs/theme.md)
+* **[`<SimpleTheme />` Component API](docs/SimpleTheme.md)**<br/>
+* **[`theme` API](docs/theme.md)**
 
 
 
