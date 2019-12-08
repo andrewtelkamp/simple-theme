@@ -1,5 +1,4 @@
+import {SimpleTheme} from './SimpleTheme';
 
-import { SimpleTheme } from './SimpleTheme'
-
-export default SimpleTheme
-export * from './lib /config'
+export * from './lib/config';
+export default SimpleTheme;

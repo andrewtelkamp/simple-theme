@@ -1,35 +1,34 @@
-
-import { Component } from 'react'
-import { theme } from './config'
+import {Component} from 'react';
+import {theme} from './config';
 
 export class SimpleTheme extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       shouldRefresh: false,
-    }
-    theme.defaults = props.defaultTheme
-    theme.additionalThemes = props.additionalThemes
+    };
+    theme.defaults = props.defaultTheme;
+    theme.additionalThemes = props.additionalThemes;
   }
 
   forceRefresh = () => {
-    this.setState({ shouldRefresh: true }, this.resetShouldRefresh)
-  }
+    this.setState({shouldRefresh: true}, this.resetShouldRefresh);
+  };
 
-  resetShouldRefresh = () => this.setState({ shouldRefresh: false })
+  resetShouldRefresh = () => this.setState({shouldRefresh: false});
 
   componentDidMount() {
-    this.activeThemeListener = theme.changeListener(this.forceRefresh)
+    this.activeThemeListener = theme.changeListener(this.forceRefresh);
   }
 
   componentWillUnmount() {
-    this.activeThemeListener()
+    this.activeThemeListener();
   }
 
   render() {
     if (this.state.shouldRefresh) {
-      return null
+      return null;
     }
-    return this.props.children
+    return this.props.children;
   }
 }

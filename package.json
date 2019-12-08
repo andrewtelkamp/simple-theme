@@ -2,7 +2,7 @@
   "name": "simple-theme",
   "version": "0.0.1",
   "description": "Lightweight and highly-customizable theming package for your React Native apps",
-  "main": "./lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/andrewtelkamp/simple-theme/issues"
   },
-  "homepage": "https://github.com/andrewtelkamp/simple-theme#readme"
+  "homepage": "https://github.com/andrewtelkamp/simple-theme#readme",
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
+    "eslint": "^6.7.2"
+  }
 }
