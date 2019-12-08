@@ -2,31 +2,39 @@
 
 A lightweight and flexible theming package for your React Native applications. Theme updates are applied without restarting your app. For flexibility-sake, theming structure is left entirely up to you. Simple-Theme simply tracks your active theme and provides a means to update said active theme from anywhere at any given time.
 
-![](https://gph.is/g/ajjbWG8)
+![](https://giphy.com/gifs/LkaCxm7ee8QXj8itge/html5)
 
 
 ## Installation
 
-```npm install simple-theme``` or ```yarn add simple-theme```
+```
+npm install simple-theme
+``` 
+or 
+```
+yarn add simple-theme
+```
 
 
 # Docs
 
-[`<SimpleTheme />` Component API](docs/SimpleTheme.md)
+[`<SimpleTheme />` Component API](docs/SimpleTheme.md)<br/>
 [`theme` API](docs/theme.md)
 
 
 
 # Structuring Your Themes
 
-Simple-Theme accepts your theming structure as is, and returns only the theme object which is active. This provides flexibility for each unique use-case. Be warned, at this time, because of this flexibility, simple-theme expects all provided objects to utilize identical shapes. As of this time, SimpleTheme also provides no means of protecting against an undefined style properties. While it's encouraged you use a structure fitting for yourself, provided [here](docs/exampleThemes) is an example of one possible approach.
+Simple-Theme accepts your theming structure as is, and returns only the active theme object for your use within styles. This provides flexibility for each unique use-case. Be forewarned, simple-theme expects all provided objects to have identical shapes. At this time, SimpleTheme provides no means of protecting against an undefined style properties. In an effort to provide such flexibility, if and how this protection is implemented is entirely up to the developer. While it's encouraged you use a structure fitting for your needs, provided [here](docs/exampleThemes) is an example of one possible approach.
 
 
 # Setup & Usage
 
 ## SimpleTheme
 
-```js import { SimpleTheme } from 'simple-theme'```
+```js
+import { SimpleTheme } from 'simple-theme'
+```
 
 ### App.js
 
@@ -52,14 +60,16 @@ export const App = () => {
 };
 ```
 
-Wrap your app root with the ```<SimpleTheme />``` component. SimpleTheme handles the app's initial themes setup as well as refreshing of your app with theme updates. Provide your default theme object, as well additional theme objects for any additional themes you will offer.
+Wrap your app root with the `<SimpleTheme />` component. SimpleTheme handles the app's initial themes setup, as well as refreshing of your app with theme updates. Provide your default theme object and any additional theme objects for any other themes you will be offering.
 
 
 ## Consuming The Theme
 
 ### Button.styles.js
 
-```js import theme from 'simple-theme'```
+```js 
+import theme from 'simple-theme'
+```
 
 ```jsx
 import theme from 'simple-theme'
@@ -84,8 +94,7 @@ const themedStyles = () => ({
 ```
 
 The active style object is accessible via the `active` property of SimpleTheme's theme object. Styles will need to be written as a function.
-Unlike Context, the style property is imported directly into your style file. This keep your components clean as they don't have to know anything
-about your style, and a change in a theming aside from an active style will never trigger a re-render.
+Unlike Context, the style properties are imported directly into your style file. This keep your components clean as your components don't have to be aware of your theme, and aside from an update to the current active theme, will never trigger a re-render.
 
 ### Button.js
 
@@ -110,7 +119,7 @@ Because styles will have to be updated via a theme change, `const styles = theme
 
 ## Toggling/Updating The Active Theme
 
-To change the active theme, call theme's setActiveTheme method with the name of the theme being set.
+To change the active theme, call theme's `setActiveTheme()` method with the name of the theme being set.
 
 ```js
 import React from 'react'
@@ -153,28 +162,4 @@ export default AppMain = () => {
 
 ## Contributing
 
-Pull Requests are welcome
-
-
-
-
-
-
-
-License
---------
-
-Copyright (c) 2019 Andrew Telkamp
-
-Licensed under the The MIT License (MIT) (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-https://raw.githubusercontent.com/airbnb/react-native-maps/master/LICENSE
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
+Pull Requests are welcome.
