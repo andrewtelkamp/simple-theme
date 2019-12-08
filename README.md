@@ -2,7 +2,7 @@
 
 A lightweight and flexible theming package for your React Native applications. Theme updates are applied without restarting your app. For flexibility-sake, theming structure is left entirely up to you. Simple-Theme simply tracks your active theme and provides a means to update said active theme from anywhere at any given time.
 
-![](https://giphy.com/gifs/LkaCxm7ee8QXj8itge/html5)
+![](assets/simple-theme.gif)
 
 
 ## Installation
