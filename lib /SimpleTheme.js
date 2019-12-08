@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import {theme} from './config';
 
-export class SimpleTheme extends Component {
+export default class SimpleTheme extends Component {
   constructor(props) {
     super(props);
     this.state = {
