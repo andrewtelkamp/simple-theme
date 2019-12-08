@@ -2,7 +2,7 @@
   "name": "simple-theme",
   "version": "0.0.1",
   "description": "Lightweight and highly-customizable theming package for your React Native apps",
-  "main": "/",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,9 @@
     "react",
     "native",
     "react-native",
-    "react-nativ-theming",
-    "react-nativ-dark-mode"
+    "themes-for-react-native",
+    "react-native-theming",
+    "react-native-dark-mode"
   ],
   "author": "Andrew Telkamp",
   "license": "MIT",
