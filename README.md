@@ -41,7 +41,7 @@ import { SimpleTheme } from 'simple-theme'
 ```jsx
 import React from 'react'
 import AppMain from './AppMain'
-import SimpleTheme from 'react-native-simple-theme'
+import { SimpleTheme } from 'simple-theme'
 import {
   darkTheme,
   grayTheme,
@@ -68,11 +68,11 @@ Wrap your app root with the `<SimpleTheme />` component. SimpleTheme handles the
 ### Button.styles.js
 
 ```js 
-import theme from 'simple-theme'
+import { theme } from 'simple-theme'
 ```
 
 ```jsx
-import theme from 'simple-theme'
+import { theme } from 'simple-theme'
 
 const themedStyles = () => ({
   button: {
@@ -124,7 +124,7 @@ To change the active theme, call theme's `setActiveTheme()` method with the name
 ```js
 import React from 'react'
 import { View } from 'react-native'
-import { theme } from 'react-native-simple-theme'
+import { theme } from 'simple-theme'
 import { THEME_NAMES } from './models'
 import { Button } from './Button'
 
