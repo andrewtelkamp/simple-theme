@@ -1,4 +1,4 @@
-import SimpleTheme from './lib/SimpleTheme';
+import SimpleTheme from './lib/SimpleTheme.js';
 
-export * from './lib/config';
+export {theme} from './lib/config.js';
 export default SimpleTheme;
