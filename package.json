@@ -1,6 +1,6 @@
 {
   "name": "simple-theme",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Lightweight and highly-customizable theming package for your React Native apps",
   "main": "index.js",
   "scripts": {
