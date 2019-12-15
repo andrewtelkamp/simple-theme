@@ -1,2 +1,2 @@
 export * from './lib/SimpleTheme';
-export * from './lib/config';
+export * from './lib/theme';
