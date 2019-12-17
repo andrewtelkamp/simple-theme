@@ -55,7 +55,8 @@ export const App = () => {
   return (
     <SimpleTheme
       additionalThemes={[darkTheme, grayTheme, pastelTheme]}
-      defaultTheme={standardTheme}>
+      defaultTheme={standardTheme}
+    >
       <AppMain />
     </SimpleTheme>
   );
