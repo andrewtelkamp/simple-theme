@@ -26,4 +26,4 @@ type themeShape = {
 }
 ```
 
-[One example themes structure can be found here](exampleThemes). Feel free to build your styles object structures however you desire.
+[One example themes structure can be found here](exampleThemes.md). Feel free to build your styles object structures however you desire.
