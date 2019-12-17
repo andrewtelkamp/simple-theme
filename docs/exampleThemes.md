@@ -3,7 +3,9 @@
 
 While not required, it's recommended to use a model to protect your
 theme names across multiple use cases.
-## ThemeModel.js
+
+## themesConfig.js
+
 ```js
 export const THEME_NAMES = {
   DARK: 'dark',
@@ -11,21 +13,18 @@ export const THEME_NAMES = {
   STANDARD: 'standard',
   PASTEL: 'pastel',
 }
-```
 
-## StandardTheme.js
-```js
-import { THEME_NAMES } from '../models'
-
-const COLORS = {
+export const COLORS = {
   BLACK: '#000',
+  DARK_GRAY: '#ccc',
+  GRAY: '#222',
   PURPLE: '#5959ff',
+  RED: '#f76c5e',
   WHITE: '#fff',
+  YELLOW: '#f5dd90',
 }
 
-export const standardTheme = {
-  name: THEME_NAMES.STANDARD,
-  styles: {
+export const baseStyles = {
     borders: {
       button: 0,
     },
@@ -51,12 +50,21 @@ export const standardTheme = {
       button: '400',
       title: '800'
     }
-  },
 }
 ```
 
 
-## DarkTheme.js
+## standardTheme.js
+
+```js
+export const standardTheme = {
+  name: THEME_NAMES.STANDARD,
+  styles: { ...baseStyles },
+}
+```
+
+
+## darkTheme.js
 
 ```js
 import { THEME_NAMES } from '../models'
@@ -70,47 +78,24 @@ const COLORS = {
 export const darkTheme = {
   name: THEME_NAMES.DARK,
   styles: {
-    borders: {
-      button: 0,
-    },
+    ...baseStyles,
     colors: {
       background: {
-        button: COLORS.PURPLE,
         screen: COLORS.BLACK,
       },
       text: {
         default: COLORS.WHITE,
-        button: COLORS.WHITE,
       },
-    },
-    fontSizes: {
-      button: 16,
-      title: 30,
-    },
-    fontStyles: {
-      button: 'normal',
-      title: 'normal',
-    },
-    fontWeights: {
-      button: '400',
-      title: '800'
     },
   },
 }
-
-
 ```
 
 
-## GrayTheme.js
+## grayTheme.js
 
 ```js
 import { THEME_NAMES } from '../models'
-
-const COLORS = {
-  DARK_GRAY: '#ccc',
-  GRAY: '#222',
-}
 
 export const grayTheme = {
   name: THEME_NAMES.GRAY,
@@ -132,10 +117,6 @@ export const grayTheme = {
       button: 12,
       title: 18,
     },
-    fontStyles: {
-      button: 'normal',
-      title: 'normal',
-    },
     fontWeights: {
       button: '800',
       title: '300'
@@ -152,10 +133,7 @@ export const grayTheme = {
 import { THEME_NAMES } from '../models'
 
 const COLORS = {
-  RED: '#f76c5e',
-  YELLOW: '#f5dd90',
-  PURPLE: '#88498f',
-  WHITE: '#fff',
+
 }
 
 export const pastelTheme = {
