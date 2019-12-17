@@ -4,7 +4,7 @@
   "description": "Lightweight and highly-customizable theming package for your React Native apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,26 @@
   },
   "homepage": "https://github.com/andrewtelkamp/simple-theme#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/runtime": "^7.7.6",
     "@react-native-community/eslint-config": "^0.0.5",
-    "eslint": "^6.7.2"
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "^6.7.2",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0"
+  },
+  "dependencies": {
+    "@babel/preset-flow": "^7.7.4",
+    "jest-enzyme": "^7.1.2",
+    "react": "^16.12.0",
+    "react-native": "^0.61.5"
   }
 }
