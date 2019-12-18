@@ -81,7 +81,7 @@ export const darkTheme = {
         screen: COLORS.BLACK,
       },
       text: {
-        ...baseStyles.colors.background,
+        ...baseStyles.colors.text,
         default: COLORS.WHITE,
       },
     },
