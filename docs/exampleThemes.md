@@ -57,7 +57,7 @@ export const baseStyles = {
 ## standardTheme.js
 
 ```js
-import { THEME_NAMES, baseStyles } from './themesConfig'
+import { baseStyles, COLORS, THEME_NAMES } from './themesConfig'
 
 export const standardTheme = {
   name: THEME_NAMES.STANDARD,
@@ -69,7 +69,7 @@ export const standardTheme = {
 ## darkTheme.js
 
 ```js
-import { baseStyles, THEME_NAMES } from './themesConfig'
+import { baseStyles, COLORS, THEME_NAMES } from './themesConfig'
 
 export const darkTheme = {
   name: THEME_NAMES.DARK,
@@ -77,9 +77,11 @@ export const darkTheme = {
     ...baseStyles,
     colors: {
       background: {
+        ...baseStyles.color.background,
         screen: COLORS.BLACK,
       },
       text: {
+        ...baseStyles.color.background,
         default: COLORS.WHITE,
       },
     },
@@ -91,7 +93,7 @@ export const darkTheme = {
 ## grayTheme.js
 
 ```js
-import { baseStyles, THEME_NAMES } from './themesConfig'
+import { baseStyles, COLORS, THEME_NAMES } from './themesConfig'
 
 
 export const grayTheme = {
@@ -128,7 +130,7 @@ export const grayTheme = {
 ## PastelTheme.js
 
 ```js
-import { baseStyles, THEME_NAMES } from './themesConfig'
+import { baseStyles, COLORS, THEME_NAMES } from './themesConfig'
 
 export const pastelTheme = {
   name: THEME_NAMES.PASTEL,
