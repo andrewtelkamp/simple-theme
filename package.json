@@ -11,15 +11,15 @@
     "url": "git+https://github.com/andrewtelkamp/simple-theme.git"
   },
   "keywords": [
-    "themes",
-    "theming",
-    "dark-mode",
-    "react",
-    "native",
     "react-native",
-    "themes-for-react-native",
     "react-native-theming",
-    "react-native-dark-mode"
+    "react-native-dark-mode",
+    "react-native-theme",
+    "stylesheet",
+    "theming",
+    "theme",
+    "dark-mode",
+    "ui"
   ],
   "author": "Andrew Telkamp",
   "license": "MIT",
