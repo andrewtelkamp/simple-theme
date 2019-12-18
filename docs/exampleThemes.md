@@ -77,11 +77,11 @@ export const darkTheme = {
     ...baseStyles,
     colors: {
       background: {
-        ...baseStyles.color.background,
+        ...baseStyles.colors.background,
         screen: COLORS.BLACK,
       },
       text: {
-        ...baseStyles.color.background,
+        ...baseStyles.colors.background,
         default: COLORS.WHITE,
       },
     },
