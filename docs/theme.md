@@ -15,7 +15,7 @@
 | `setActiveTheme` | `name: String` | | sets the active theme |
 | `getActiveThemeName` | | the active theme name | |
 | `getAllThemes` | | all theme objects | | 
-| `getThemeKeys` _(deprecated)_ | | all theme keys (names) | **Deprecated**. use `getThemeNames` instead |
+| `getThemeKeys` | | all theme keys (names) | **Deprecated**. use `getThemeNames` instead |
 | `getThemeNames` | | all theme names | |
 
 
@@ -26,4 +26,4 @@ type themeShape = {
 }
 ```
 
-[One example themes structure can be found here](exampleThemes.md). Feel free to build your styles object structures however you desire.
+[One example themes' structure can be found here](exampleThemes.md). Feel free to build your styles object structures however you desire.
